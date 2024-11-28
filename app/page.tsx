@@ -1,27 +1,15 @@
 "use client";
 import Image from "next/image";
 
-// import DnsSwitcher from "../components/DnsSwitcher";
 import { useState } from "react";
-import { Plus } from "lucide-react";
 import { julius_Sans_One, k2d } from "@/lib/fonts";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+
 import Form from "@/components/Form";
 export default function Home() {
-  // Type the state variable selectedDns as a string
   const [selectedDns, setSelectedDns] = useState<string>("");
 
-  // Add types for the event handler argument
   const handleDnsChange = (value: string) => {
-    setSelectedDns(value); // Update the selected DNS
+    setSelectedDns(value);
   };
 
   return (
@@ -46,7 +34,6 @@ export default function Home() {
           Your gateway to faster, safer, and unrestricted internet
         </p>
         <Form></Form>
-        {/* <DnsSwitcher selectedDns={selectedDns} /> */}
       </div>
     </div>
   );
