@@ -27,3 +27,9 @@
     --radius: 0.5rem;
   }
 }
+@font-face {
+  font-family: "Mistral";
+  src: url("/fonts/MISTRAL.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

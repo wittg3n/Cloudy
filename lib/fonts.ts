@@ -1,5 +1,4 @@
 import { K2D, Jaldi, Julius_Sans_One } from "next/font/google";
-
 export const jaldi = Jaldi({
   weight: ["400", "700"],
   subsets: ["latin"],
