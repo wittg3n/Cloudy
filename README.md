@@ -12,6 +12,21 @@
 
 ![cloudy_clientt](https://github.com/wittg3n/cloudy/blob/master/public/cloudy.jpg)
 
+[![Tauri][s0]][l0] [![Next.js][s1]][l1] [![Rust][s2]][l2] [![TypeScript][s3]][l3] [![JavaScript][s4]][l4] [![Tailwind CSS][s5]][l5]
+
+[s0]: https://img.shields.io/badge/Tauri-v2-ffc131?logo=Tauri&logoColor=black
+[l0]: https://tauri.app/
+[s1]: https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white
+[l1]: https://nextjs.org/
+[s2]: https://img.shields.io/badge/Rust-%23000000.svg?logo=rust&logoColor=white
+[l2]: https://www.rust-lang.org/
+[s3]: https://img.shields.io/badge/TypeScript-%23007ACC.svg?logo=typescript&logoColor=white
+[l3]: https://www.typescriptlang.org/
+[s4]: https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?logo=javascript&logoColor=black
+[l4]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[s5]: https://img.shields.io/badge/TailwindCSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white
+[l5]: https://tailwindcss.com/
+
 Welcome to **Cloudy**, the ultimate DNS management app built with **Tauri v2** and **Next.js**! 🌐 Whether you're optimizing internet speed, enhancing privacy, or just exploring alternative DNS providers, Cloudy makes managing DNS settings easy and efficient.
 
 This lightweight app allows you to seamlessly switch between trusted DNS providers like **Google DNS**, **Cloudflare**, **OpenDNS**, and many more. Ready to turbocharge your browsing experience? Let’s dive in! 💻✨
@@ -35,10 +50,8 @@ This lightweight app allows you to seamlessly switch between trusted DNS provide
   - **Google DNS:** 8.8.8.8, 8.8.4.4
   - **Cloudflare DNS:** 1.1.1.1, 1.0.0.1
   - **AdGuard DNS:** 94.140.14.14, 94.140.15.15
-  - And more (see the full list below).
+  - And more.
 
-- **Cross-Platform Compatibility:** Runs seamlessly on Windows, macOS, and Linux.
-- **Custom DNS Settings:** Add your own DNS servers for flexibility.
 - **Open Source:** Fully transparent and customizable.
 
 ---
