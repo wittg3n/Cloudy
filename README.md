@@ -10,6 +10,8 @@
 </div>
 <br />
 
+![cloudy_clientt](https://github.com/wittg3n/cloudy/blob/master/public/cloudy.jpg)
+
 Welcome to **Cloudy**, the ultimate DNS management app built with **Tauri v2** and **Next.js**! 🌐 Whether you're optimizing internet speed, enhancing privacy, or just exploring alternative DNS providers, Cloudy makes managing DNS settings easy and efficient.
 
 This lightweight app allows you to seamlessly switch between trusted DNS providers like **Google DNS**, **Cloudflare**, **OpenDNS**, and many more. Ready to turbocharge your browsing experience? Let’s dive in! 💻✨

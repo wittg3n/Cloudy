@@ -120,7 +120,7 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
         onClick={handleToggle}
         className={`transition-all duration-300 w-full rounded-md mt-6 text-[18px] ${
           isActivated
-            ? "bg-[#FF4000] text-black hover:bg-[#D44D5C]"
+            ? "bg-[#BC4B51] text-white hover:bg-[#C25B60]"
             : "bg-[#171717] text-white hover:bg-gray-700"
         } disabled:bg-gray-500`}
         disabled={loading || isNonGoogleDns}
