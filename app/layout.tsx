@@ -19,6 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jaldi.className}>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener("contextmenu", function(e) {
+                e.preventDefault();
+              });
+            `,
+          }}
+        />
         <TopBar />
         {children}
         <Footer />

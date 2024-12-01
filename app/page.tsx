@@ -43,7 +43,7 @@ export default function Home() {
               Cloudy
             </h2>
             <p
-              className={`transition-all duration-300 selection:bg-selection-purple text-center font-semibold text-sm text-black mb-6 ${julius_Sans_One.className}`}
+              className={`select-none transition-all duration-300 selection:bg-selection-purple text-center font-semibold text-sm text-black mb-6 ${julius_Sans_One.className}`}
             >
               improve your internet performance with customizable DNS settings.
             </p>

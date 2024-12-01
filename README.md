@@ -1,7 +1,14 @@
-# Cloudy 🌥️
-<img src="https://github.com/wittg3n/cloudy/blob/master/public/logo.png" alt="logo" width="200"/>
-
-# Effortlessly Change Your DNS with Tauri + Next.js 🚀
+<div align="center">
+   <img align="center" width="128px" src="https://github.com/wittg3n/cloudy/blob/master/src-tauri/icons/128x128%402x.png" />
+   <h1 align="center"><b> Cloudy</b></h1>
+   <h3 align="center">
+   Effortlessly Change Your DNS </h3>
+   <h3>with Tauri V2 + Next.js 🚀</h3>
+      <br />
+      <br />
+      <br />
+</div>
+<br />
 
 Welcome to **Cloudy**, the ultimate DNS management app built with **Tauri v2** and **Next.js**! 🌐 Whether you're optimizing internet speed, enhancing privacy, or just exploring alternative DNS providers, Cloudy makes managing DNS settings easy and efficient.
 

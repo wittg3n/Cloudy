@@ -1,3 +1,5 @@
+
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 use tauri::{AppHandle, Manager};
 use std::process::Command;
 use std::collections::HashMap;

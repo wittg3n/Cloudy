@@ -15,7 +15,7 @@
         "title": "Cloudy",
         "width": 400,
         "height": 700,
-        "resizable": true,
+        "resizable": false,
         "fullscreen": false,
         "decorations": false,
         "transparent": false,
@@ -33,7 +33,13 @@
       ]
     }
   },
+
   "bundle": {
+    "windows": {
+      "nsis": {
+        "installMode": "perMachine"
+      }
+    },
     "active": true,
     "targets": "all",
     "icon": [
