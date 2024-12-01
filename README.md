@@ -191,7 +191,3 @@ We welcome contributions! Feel free to submit issues, suggestions, or pull reque
 ## 📜 License
 
 Cloudy is open-source and available under the MIT License.
-<<<<<<< HEAD
-=======
-
-> > > > > > > 976e51ef346f6f01819d58895d2054451b0d03e9
