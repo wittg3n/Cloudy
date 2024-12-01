@@ -1,6 +1,5 @@
 # Cloudy 🌥️
-
-![image](https://github.com/wittg3n/cloudy/blob/master/public/logo.png)
+<img src="https://github.com/wittg3n/cloudy/blob/master/public/logo.png" alt="logo" width="200"/>
 
 # Effortlessly Change Your DNS with Tauri + Next.js 🚀
 
