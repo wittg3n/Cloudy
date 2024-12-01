@@ -4,10 +4,8 @@ use std::collections::HashMap;
 use regex::Regex;
 use tauri_plugin_log::{Builder as LogBuilder, Target, TargetKind};
 
-// Import logging macros
 use log::{info, error, warn, debug};
 
-// Loggable function to get current DNS
 #[tauri::command]
 fn get_current_dns() -> Result<(String, String), String> {
     info!("Starting get_current_dns command...");
@@ -170,7 +168,6 @@ fn change_dns(dns_name: String, interface_name: String) -> Result<String, String
     Ok("DNS changed successfully".to_string())
 }
 
-// Loggable function to close the window
 #[tauri::command]
 fn close_window(app_handle: AppHandle) {
     info!("Closing the main window...");
@@ -183,7 +180,6 @@ fn close_window(app_handle: AppHandle) {
     }
 }
 
-// Loggable function to minimize the window
 #[tauri::command]
 fn minimize_window(app_handle: AppHandle) {
     info!("Minimizing the main window...");
@@ -198,11 +194,10 @@ fn minimize_window(app_handle: AppHandle) {
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 fn main() {
-    // Initialize the Tauri app with logging
     info!("Starting Tauri application...");
 
     tauri::Builder::default()
-        .plugin(LogBuilder::new().target(Target::new(TargetKind::Stdout)).build())  // Register log plugin
+        .plugin(LogBuilder::new().target(Target::new(TargetKind::Stdout)).build())  
         .invoke_handler(tauri::generate_handler![close_window, minimize_window, change_dns, get_current_dns])
         .run(tauri::generate_context!())
         .expect("Error while running Tauri application");

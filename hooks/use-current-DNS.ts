@@ -49,13 +49,12 @@ function useCurrentDNS(): UseCurrentDNSResult {
   useEffect(() => {
     const fetchDNS = async () => {
       try {
-        // Ensure invoke returns the result properly
         const result: [string, string] = await invoke("get_current_dns");
         const dnsProvider = getDnsName(result[1], dnsMap);
         console.log(result[0]);
-        setInterfaces(result[0]); // Set the interface directly
+        setInterfaces(result[0]);
         if (dnsProvider) {
-          setDns(dnsProvider); // Set the DNS name to the state
+          setDns(dnsProvider);
         } else {
           setDnsNotfound("DNS not found in the known DNS providers.");
         }

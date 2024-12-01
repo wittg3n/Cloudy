@@ -11,9 +11,8 @@ import {
 } from "@/components/ui/select";
 import { invoke } from "@tauri-apps/api/core";
 import { toast } from "sonner";
-import { Unplug, Plug } from "lucide-react"; // Import icons
+import { Unplug, Plug } from "lucide-react";
 
-// Import the dnsMap from the lib/dnsMap.ts file
 import { dnsMap } from "@/lib/dnsMap";
 
 interface FormProps {
@@ -32,7 +31,6 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
     Object.values(dnsMap).some((addresses) => addresses.includes(dns)) &&
     !isGoogleDns;
 
-  // Show error if DNS not found
   if (dnsNotfound) {
     toast(dnsNotfound);
   }
@@ -50,12 +48,11 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
       }
 
       if (isActivated) {
-        // Deactivate DNS and set to Google
         const response = await invoke<string>("change_dns", {
-          dnsName: "Google", // Change DNS to Google
+          dnsName: "Google",
           interfaceName: interfaces,
         });
-        console.log("Response:", response); // Log the response for debugging
+        console.log("Response:", response);
         toast.success("Deactivated and DNS changed to Google DNS.");
       } else {
         if (!dnsName) {
@@ -63,26 +60,23 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
           return;
         }
 
-        // If using a DNS other than Google, deactivate it first
         if (!isGoogleDns) {
           const response = await invoke<string>("change_dns", {
-            dnsName: "Google", // Change to Google DNS first
+            dnsName: "Google",
             interfaceName: interfaces,
           });
-          console.log("Response:", response); // Log the response for debugging
+          console.log("Response:", response);
           toast.success("Deactivated and DNS changed to Google DNS.");
         }
 
-        // Now activate the selected DNS
         const response = await invoke<string>("change_dns", {
-          dnsName: dnsName, // Set the selected DNS
+          dnsName: dnsName,
           interfaceName: interfaces,
         });
-        console.log("Response:", response); // Log the response for debugging
+        console.log("Response:", response);
         toast.success("Activated with DNS: " + dnsName);
       }
 
-      // Toggle the activation state
       setIsActivated(!isActivated);
     } catch (error) {
       console.error("Error invoking change_dns:", error);
@@ -94,7 +88,6 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
     }
   };
 
-  // Set the initial state based on the DNS on component mount
   useEffect(() => {
     if (dns && !isGoogleDns && Object.keys(dnsMap).includes(dns)) {
       setIsActivated(true);
@@ -106,7 +99,7 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
     <div className="mt-[40px]">
       <Select
         onValueChange={handleDnsChange}
-        disabled={isNonGoogleDns || isActivated} // Disable Select if DNS is not Google or if activated
+        disabled={isNonGoogleDns || isActivated}
       >
         <SelectTrigger className="w-[300px] h-[40px] text-[17px] ring-0">
           <SelectValue
@@ -116,7 +109,6 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
           />
         </SelectTrigger>
         <SelectContent className="max-h-[200px] overflow-y-auto">
-          {/* Fixed size with scroll */}
           {Object.keys(dnsMap).map((dnsKey) => (
             <SelectItem key={dnsKey} value={dnsKey} className="text-[16px]">
               {dnsKey} DNS
@@ -131,7 +123,7 @@ const Form = ({ dns, interfaces, dnsNotfound }: FormProps) => {
             ? "bg-[#FF4000] text-black hover:bg-[#D44D5C]"
             : "bg-[#171717] text-white hover:bg-gray-700"
         } disabled:bg-gray-500`}
-        disabled={loading || isNonGoogleDns} // Disable button if loading or if DNS is not Google
+        disabled={loading || isNonGoogleDns}
       >
         {loading ? (
           <div

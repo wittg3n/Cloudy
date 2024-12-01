@@ -3,15 +3,15 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Spinner = () => {
-  const messages = ["Loading", "Still Loading", "Almost There"]; // Messages to cycle through
+  const messages = ["Loading", "Still Loading", "Almost There"];
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentMessageIndex((prevIndex) => (prevIndex + 1) % messages.length);
-    }, 1500); // Change every second
+    }, 1500);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (

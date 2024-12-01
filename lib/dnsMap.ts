@@ -1,5 +1,3 @@
-// lib/dnsMap.ts
-
 export const dnsMap = {
   Radar: ["10.202.10.10", "10.202.10.11"],
   Electro: ["78.157.42.100", "78.157.42.101"],
@@ -16,5 +14,4 @@ export const dnsMap = {
   Verisign: ["64.6.64.6", "64.6.65.6"],
 };
 
-// Optionally, you can also export a type if you're using TypeScript
 export type DNSMap = typeof dnsMap;
