@@ -38,11 +38,11 @@ Cloudy’s modular structure makes it beginner-friendly and highly maintainable:
 ```plaintext
 cloudy
   ├── app
-  │   ├── favicon.ico       # App icon
-  │   ├── globals.css       # Global styles
-  │   ├── layout.tsx        # Root layout
-  │   ├── page.tsx          # Main page
-  ├── components            # Reusable components
+  │   ├── favicon.ico
+  │   ├── globals.css
+  │   ├── layout.tsx
+  │   ├── page.tsx
+  ├── components
   │   ├── Footer.tsx
   │   ├── Form.tsx
   │   ├── Spinner.tsx
@@ -51,23 +51,45 @@ cloudy
   │   ├── use-current-DNS.ts
   │   ├── use-toast.ts
   ├── lib
-  │   ├── dnsMap.ts         # DNS mapping
+  │   ├── dnsMap.ts
   │   ├── fonts.ts
   │   ├── utils.ts
-  ├── out/public            # Public assets (logo, fonts, etc.)
-  │   ├── logo.svg
+  ├── node_modules
+  ├── out
+  ├── public
+  │   ├── fonts
   │   ├── loading.gif
-  ├── src-tauri             # Backend (Rust/Tauri)
+  │   ├── logo.svg
+  ├── src-tauri
+  │   ├── capabilities
+  │   ├── gen
+  │   ├── icons
   │   ├── src
   │   │   ├── lib.rs
-  │   │   ├── main.rs
-  ├── package.json          # Node.js configuration
-  ├── README.md             # You’re reading this!
+  │   │   └── main.rs
+  │   ├── target
+  │   ├── .gitignore
+  │   ├── 2
+  │   ├── build.rs
+  │   ├── Cargo.lock
+  │   ├── Cargo.toml
+  │   └──tauri.conf.json
+  ├── .eslintrc.json
+  ├── components.json
+  ├── next-env.d.ts
+  ├── next.config.mjs
+  ├── package-lock.json
+  ├── package.json
+  ├── postcss.config.mjs
+  ├── README.md
+  ├── tailwind.config.ts
+  └── tsconfig.json
+
 ```
 
 ---
 
-## 🚀 Installation Guide
+## 🚀 Installation Guide (for Developement 🔧)
 
 ### Step 1: Install Dependencies
 
@@ -77,7 +99,7 @@ Before we get started, make sure you have these installed on your machine:
 
 Cloudy uses **Node.js** for the frontend (Next.js), so you’ll need to install it if you haven’t already.
 
-- Go to the Node.js website and download the latest stable version.
+- Go to the [Node.js](https://nodejs.org/en) website and download the latest stable version.
 - Install Node.js by following the instructions for your OS.
 
 #### 1.2 Rust
@@ -86,9 +108,12 @@ Cloudy uses **Rust** via Tauri to build a native desktop app. You can install Ru
 
 bash
 
-`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
 
 Follow the prompts to complete the installation.
+
+If you encounter any issues, watch this on [Youtube](https://www.youtube.com/watch?v=p-HfqVNPPX0&ab_channel=WillVelida).
+
 
 #### 1.3 Tauri v2
 
@@ -96,7 +121,7 @@ Now, let’s install **Tauri v2**. This is the core framework that enables the d
 
 bash
 
-`cargo install tauri-cli`
+```cargo install tauri-cli```
 
 This will install the latest version of Tauri CLI.
 
@@ -106,7 +131,7 @@ Clone the Cloudy repository to your local machine:
 
 bash
 
-`git clone https://github.com/yourusername/cloudy.git cd cloudy`
+```git clone https://github.com/yourusername/cloudy.git cd cloudy```
 
 ### Step 3: Install Node.js Dependencies
 
@@ -114,7 +139,7 @@ Run the following command to install all the Node.js dependencies for the fronte
 
 bash
 
-`npm install`
+```npm install```
 
 ### Step 4: Build the Tauri App
 
@@ -122,7 +147,7 @@ Next, let’s build the Tauri app:
 
 bash
 
-`npm run tauri dev`
+```npm run tauri dev```
 
 This will start the app in development mode. You should now see Cloudy up and running! 🚀
 
@@ -156,10 +181,4 @@ We welcome contributions! Feel free to submit issues, suggestions, or pull reque
 
 Cloudy is open-source and available under the MIT License.
 
----
 
-With this change, your README now mentions the DNS servers without going into the installation process for selecting them in the app. Let me know if you'd like any further modifications!
-
-```
-
-```
