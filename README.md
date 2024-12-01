@@ -126,10 +126,6 @@ Follow the prompts to complete the installation.
 
 If you encounter any issues, watch this on [Youtube](https://www.youtube.com/watch?v=p-HfqVNPPX0&ab_channel=WillVelida).
 
-# <<<<<<< HEAD
-
-> > > > > > > 976e51ef346f6f01819d58895d2054451b0d03e9
-
 #### 1.3 Tauri v2
 
 Now, let’s install **Tauri v2**. This is the core framework that enables the desktop capabilities of Cloudy.
