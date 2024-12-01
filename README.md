@@ -1,4 +1,8 @@
-# Cloudy 🌥️ | Effortlessly Change Your DNS with Tauri + Next.js 🚀
+# Cloudy 🌥️
+
+![image](https://github.com/wittg3n/cloudy/blob/master/public/logo.png)
+
+# Effortlessly Change Your DNS with Tauri + Next.js 🚀
 
 Welcome to **Cloudy**, the ultimate DNS management app built with **Tauri v2** and **Next.js**! 🌐 Whether you're optimizing internet speed, enhancing privacy, or just exploring alternative DNS providers, Cloudy makes managing DNS settings easy and efficient.
 
@@ -108,12 +112,15 @@ Cloudy uses **Rust** via Tauri to build a native desktop app. You can install Ru
 
 bash
 
-```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
+`curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
 
 Follow the prompts to complete the installation.
 
 If you encounter any issues, watch this on [Youtube](https://www.youtube.com/watch?v=p-HfqVNPPX0&ab_channel=WillVelida).
 
+# <<<<<<< HEAD
+
+> > > > > > > 976e51ef346f6f01819d58895d2054451b0d03e9
 
 #### 1.3 Tauri v2
 
@@ -121,7 +128,7 @@ Now, let’s install **Tauri v2**. This is the core framework that enables the d
 
 bash
 
-```cargo install tauri-cli```
+`cargo install tauri-cli`
 
 This will install the latest version of Tauri CLI.
 
@@ -131,7 +138,7 @@ Clone the Cloudy repository to your local machine:
 
 bash
 
-```git clone https://github.com/yourusername/cloudy.git cd cloudy```
+`git clone https://github.com/yourusername/cloudy.git cd cloudy`
 
 ### Step 3: Install Node.js Dependencies
 
@@ -139,7 +146,7 @@ Run the following command to install all the Node.js dependencies for the fronte
 
 bash
 
-```npm install```
+`npm install`
 
 ### Step 4: Build the Tauri App
 
@@ -147,7 +154,7 @@ Next, let’s build the Tauri app:
 
 bash
 
-```npm run tauri dev```
+`npm run tauri dev`
 
 This will start the app in development mode. You should now see Cloudy up and running! 🚀
 
@@ -180,5 +187,7 @@ We welcome contributions! Feel free to submit issues, suggestions, or pull reque
 ## 📜 License
 
 Cloudy is open-source and available under the MIT License.
+<<<<<<< HEAD
+=======
 
-
+> > > > > > > 976e51ef346f6f01819d58895d2054451b0d03e9
