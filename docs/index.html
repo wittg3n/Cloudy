@@ -4,10 +4,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- ===============================================-->
-    <!--    Document Title & Meta Tags-->
-    <!-- ===============================================-->
     <title>Cloudy | DNS Changing App</title>
     <meta
       name="description"
@@ -15,87 +11,27 @@
     />
     <meta
       name="keywords"
-      content="DNS, DNS app, change DNS, secure DNS, internet speed,Cloudy app"
+      content="DNS, DNS app, change DNS, secure DNS, internet speed, Cloudy app"
     />
     <meta name="author" content="Cloudy Team" />
-    <meta property="og:title" content="Cloudy | DNS Changing App" />
-    <meta
-      property="og:description"
-      content="Cloudy is a fast and secure DNS changing app designed for modern devices, making internet connection faster and more reliable."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://your-website-url.com" />
-    <meta
-      property="og:image"
-      content="assets/img/favicons/apple-touch-icon.png"
-    />
-    <meta property="og:site_name" content="Cloudy" />
-    <meta name="twitter:title" content="Cloudy | DNS Changing App" />
-    <meta
-      name="twitter:description"
-      content="Cloudy is a fast and secure DNS changing app designed for modern devices, making internet connection faster and more reliable."
-    />
-    <meta
-      name="twitter:image"
-      content="assets/img/favicons/apple-touch-icon.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/favicons/favicon-16x16.png"
-    />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicons/favicon.ico"
-    />
-    <link rel="manifest" href="assets/img/favicons/manifest.json" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/img/favicons/mstile-150x150.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
     <link href="assets/css/theme.min.css" rel="stylesheet" />
 
-    <!-- Add custom CSS to prevent overflow and scrolling -->
     <style>
       html,
       body {
         height: 100%;
         margin: 0;
-        overflow: hidden; /* Prevent scrolling */
+        overflow: hidden;
         display: flex;
         flex-direction: column;
       }
       .main {
         flex-grow: 1;
       }
-      /* Ensure the hero image covers the full screen */
       #home {
         position: relative;
-        height: 100vh; /* Full height */
-        width: 100vw; /* Full width */
+        height: 100vh;
+        width: 100vw;
       }
       .bg-holder {
         position: absolute;
@@ -112,14 +48,13 @@
         z-index: 2;
       }
 
-      /* Button color customization */
       .btn-primary {
         background-color: #907dff;
         border-color: #907dff;
       }
 
       .btn-primary:hover {
-        background-color: #7e66e6; /* Darker shade on hover */
+        background-color: #7e66e6;
         border-color: #7e66e6;
       }
 
@@ -131,9 +66,6 @@
   </head>
 
   <body>
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
     <main class="main" id="top">
       <nav
         class="navbar navbar-expand-lg navbar-light fixed-top py-3"
@@ -148,17 +80,6 @@
             <div class="text-1000">Cloudy</div>
             <div class="text-1000">App</div>
           </a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <div
             class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
             id="navbarSupportedContent"
@@ -166,10 +87,10 @@
             <form class="ms-auto">
               <a
                 class="btn btn-lg btn-primary rounded-pill order-0"
-                href="https://github.com/wittg3n/vismo"
-                target="_blank"
+                href="https://github.com/wittg3n/cloudy/releases/download/v0.1.0/cloudy.rar"
+                download
                 role="button"
-                aria-label="Download Cloudy from GitHub"
+                aria-label="Download Cloudy"
                 >Download Cloudy</a
               >
             </form>
@@ -178,7 +99,6 @@
       </nav>
       <section class="py-0" id="home">
         <div class="bg-holder"></div>
-        <!-- Background image holder -->
         <div class="container position-relative">
           <div class="row align-items-center py-8">
             <div class="col-md-5 col-lg-6 order-md-1 text-center text-md-end">
@@ -201,8 +121,8 @@
               </p>
               <a
                 class="btn btn-lg btn-primary rounded-pill hover-top"
-                href="https://github.com/wittg3n/vismo"
-                target="_blank"
+                href="https://github.com/wittg3n/cloudy/releases/download/v0.1.0/cloudy.rar"
+                download
                 role="button"
                 aria-label="Download Cloudy Now"
                 >Download Now</a
@@ -213,17 +133,10 @@
       </section>
     </main>
 
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
     <script src="vendors/@popperjs/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
-      rel="stylesheet"
-    />
   </body>
 </html>
